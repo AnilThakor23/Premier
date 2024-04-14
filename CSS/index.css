@@ -1,0 +1,1897 @@
+
+@font-face {
+    font-family: nb;
+    src: url(../ASSETS/fonts/NBInternationalPro-Bold.woff2);
+}
+@font-face {
+    font-family: satoshi;
+    src: url(../ASSETS/fonts/Satoshi-Variable.woff2);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(../ASSETS/fonts/Gilroy-Thin.woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #111;
+    color: white;
+    font-family: satoshi;
+}
+body a{
+    color: inherit;
+    text-decoration: none;
+}
+.page1 a{
+    cursor: none;
+}
+.curser-circle{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 999999;
+    background-color: transparent;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.main{
+    cursor: none;
+}
+/* ================================================= page 1  ============================================= */
+.page1 {
+    background-color: #111;
+    position: relative;
+    height: 100svh;
+    width: 100vw;
+    padding: 2vh 2vw 3vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* ------------------------------- pg1 left  */
+.pg1-left {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.pg1-left .text {
+    padding-left: 1vw;
+    width: 100%;
+    font-size: 3vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 1;
+    font-family: nb;
+}
+
+.pg1-left .text .layer1 {
+    overflow: hidden;
+}
+
+.pg1-left .text .layer2 {
+    margin-top: 1vh;
+    margin-left: 3vh;
+    overflow: hidden;
+}
+
+.pg1-left .layer2 h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.pg1-left .logo {
+    z-index: 5;
+    mix-blend-mode: difference;
+    overflow: hidden;
+    font-size: 13vw;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* -------------------------- pg1 right */
+.pg1-right {
+    padding: 0 1vw;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.pg1-right .menubar {
+    display: none;
+}
+
+.pg1-right .backInMobile {
+    display: none;
+}
+
+.pg1-right-nav {
+    margin-top: 1vh;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.pg1-right-nav .elem {
+    width: 10vw;
+    font-size: 1.1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7vh;
+    white-space: nowrap;
+    position: relative;
+}
+.pg1-right-nav .elem h3{
+    position: absolute;
+}
+.pg1-right .text {
+    font-size: 0.8vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    color: rgb(161, 163, 163);
+    top: 70vh;
+    overflow: hidden;
+}
+
+.pg1-right .text #text1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.pg1-right .text #text2 {
+    display: none;
+}
+
+.pg1-right .text #outer {
+    overflow: hidden;
+    margin-top: 5px;
+    height: 8px;
+    width: 90%;
+    background-color: rgba(234, 231, 231, 0.637);
+}
+
+.pg1-right .text #outer #inner {
+    width: 100%;
+    height: 100%;
+    background-color: #AADD3A;
+    border-radius: 5px;
+}
+
+.pg1-scroll-btn {
+    color: rgba(186, 183, 183, 0.708);
+    position: absolute;
+    bottom: 1vh;
+    border-bottom: 2px solid rgba(90, 88, 88, 0.641);
+    padding-bottom: 2px;
+    -webkit-animation: animeForScrolldownBtn 0.8s linear 0s infinite alternate;
+            animation: animeForScrolldownBtn 0.8s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes animeForScrolldownBtn {
+    from {
+        bottom: 1.4vh;
+    }
+
+    to {
+        bottom: 0.6vh;
+    }
+}
+
+@keyframes animeForScrolldownBtn {
+    from {
+        bottom: 1.4vh;
+    }
+
+    to {
+        bottom: 0.6vh;
+    }
+}
+
+/* --------------------------------------------pg1 video */
+.pg1-video {
+    position: absolute;
+    width: 45vw;
+    height: 45vh;
+    overflow: hidden;
+    border-radius: 13px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.pg1-video video {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.pg1-modeling-text {
+    color: #dadada;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 10vw;
+    mix-blend-mode: difference;
+    z-index: 999;
+}
+
+/* ================================================ page2 ================================================ */
+.page2 {
+    background-color: #111;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+/* -------------------------- slogan  */
+.pg2-slogan {
+    position: relative;
+    top: 12vh;
+    width: 100%;
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.pg2-slogan .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    font-family: gilroy;
+    text-transform: lowercase;
+}
+
+.pg2-slogan h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.8vw;
+    color: rgba(100, 97, 97, 0.523)
+}
+
+.pg2-slogan #first :nth-child(4) {
+    margin-right: 1vw;
+}
+
+.pg2-slogan #first :nth-child(11) {
+    margin-right: 1vw;
+}
+
+.pg2-slogan #first :nth-child(17) {
+    margin-right: 1vw;
+}
+
+.pg2-slogan #second :nth-child(7) {
+    margin-right: 1vw;
+}
+
+.pg2-slogan #second :nth-child(13) {
+    margin-right: 1vw;
+}
+
+.pg2-slogan #second :nth-child(17) {
+    margin-right: 1vw;
+}
+
+/* ---------------------------------------------------About */
+.aboutSection {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    border-top: 1px solid rgb(59, 58, 58);
+    border-radius: 15px;
+    color: #fff;
+    background-color: #111;
+}
+
+.aboutSection .about {
+    font-size: 3vw;
+    width: 70vw;
+    text-align: end;
+    text-wrap: nowrap;
+    padding-top: 5vh;
+    margin-left: 2vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.aboutSection .about div {
+    margin-top: 7vh;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(210, 205, 205, 0.758);
+    border-radius: 10px;
+}
+
+.aboutContent {
+    position: relative;
+    margin-top: 10vh;
+    width: 100%;
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.aboutContent .content {
+    position: absolute;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    left: 55%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8vh;
+}
+
+.aboutContent .content .text {
+    width: 45vw;
+}
+
+.aboutContent .content .text h4 {
+    font-size: 2vw;
+    line-height: 1.3;
+}
+
+.aboutContent .content .image {
+    height: 70vh;
+    width: 55vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.aboutContent .image-scrollanime-Wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 65%;
+}
+
+.aboutContent .image-scrollanime-Wrapper .scroll-text-coming {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #AADD3A;
+    border-radius: 10px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.aboutContent .image-scrollanime-Wrapper h1 {
+    font-size: 7vw;
+    rotate: -90deg;
+    height: 22vh;
+    letter-spacing: 0.5vh;
+    font-family: nb;
+}
+
+.aboutContent .image-scrollanime-Wrapper .aboutUsBtn {
+    margin-top: 2vh;
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    font-size: 1.2vw;
+    color: #151515;
+}
+
+.aboutContent .content .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.aboutContent .content .image p {
+    width: 50%;
+    padding: 2vh 2vw;
+}
+
+/* ----------------------------------great animation */
+.aboutContent .greatAnimation {
+    position: absolute;
+    right: 0%;
+    top: 3%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 30vw;
+    height: 25vw;
+    z-index: -1;
+}
+
+.aboutContent .greatAnimation .part1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: rgba(168, 218, 60, 0.823);
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+}
+
+.aboutContent .greatAnimation .part2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(173, 228, 55, 0.857);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    -webkit-animation-name: pg2GreatAnime2;
+            animation-name: pg2GreatAnime2;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.aboutContent .greatAnimation .part3 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(173, 222, 66, 0.834);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    -webkit-animation-name: pg2GreatAnime3;
+            animation-name: pg2GreatAnime3;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes pg2GreatAnime2 {
+    0% {
+        -webkit-transform: translate(55%, -10%);
+                transform: translate(55%, -10%);
+    }
+
+    100% {
+        -webkit-transform: translate(0%, 10%);
+                transform: translate(0%, 10%);
+    }
+}
+
+@keyframes pg2GreatAnime2 {
+    0% {
+        -webkit-transform: translate(55%, -10%);
+                transform: translate(55%, -10%);
+    }
+
+    100% {
+        -webkit-transform: translate(0%, 10%);
+                transform: translate(0%, 10%);
+    }
+}
+
+@-webkit-keyframes pg2GreatAnime3 {
+    0% {
+        -webkit-transform: translate(5%, -5%);
+                transform: translate(5%, -5%);
+    }
+
+    100% {
+        -webkit-transform: translate(-25%, 25%);
+                transform: translate(-25%, 25%);
+    }
+}
+
+@keyframes pg2GreatAnime3 {
+    0% {
+        -webkit-transform: translate(5%, -5%);
+                transform: translate(5%, -5%);
+    }
+
+    100% {
+        -webkit-transform: translate(-25%, 25%);
+                transform: translate(-25%, 25%);
+    }
+}
+
+/* ===================================================  page3 ===================================== */
+.page3 {
+    position: relative;
+    background-color: #111;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+/* ---------------------------- model page heading */
+.page3 .modelHeading {
+    font-size: 3.2vw;
+    width: 64vw;
+    letter-spacing: 0.4vw;
+    text-align: end;
+    text-wrap: nowrap;
+    margin-left: 2vw;
+    text-transform: uppercase
+}
+
+.page3 .modelHeading div {
+    margin-top: 4vh;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(210, 205, 205, 0.758);
+    border-radius: 10px;
+}
+
+/* ---------------------------swiperjs animation */
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    height: 100%;
+    width: 25vw;
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 85%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 10px;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.swiper-slide img:hover{
+    scale: 1.05;
+}
+.swiper-slide .text {
+    justify-self: flex-end;
+    width: 100%;
+    height: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 0.8vw;
+    margin-bottom: 1.5vh;
+    gap: 1vh;
+}
+
+.swiper-slide .text .name {
+    font-size: 1.01vw;
+}
+
+.swiper-slide .text .country {
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+.swiper-slide .line {
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.swiper #swiper-slide1 {
+    margin-left: 3vw;
+}
+
+/* ----------------------------view all naamke btns */
+.page3 .viewAllWraper {
+    height: 40vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.viewAll {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5vh 0;
+}
+
+.viewAll .left {
+    width: 38%;
+    height: 100%;
+    border-right: 1px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.viewAll .left h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 8vh;
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FE330A;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    text-wrap: nowrap;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.viewAll .left h2:hover {
+    background-color: #a92608da;
+}
+
+.viewAll .right {
+    width: 58%;
+    padding: 4vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+.viewAll .right p {
+    line-height: 1.3;
+    font-size: 1.2vw;
+}
+
+.page3 .joinUsBtns {
+    height: 12vh;
+    margin-top: 8vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5vw;
+}
+
+.page3 .joinUsBtns h1 {
+    text-wrap: nowrap;
+    height: 8vh;
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5vw;
+    color: white;
+    border-radius: 5px;
+}
+
+.page3 .joinUsBtns .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.page3 .joinUsBtns .line {
+    height: 2px;
+    width: 88%;
+    background-color: white;
+}
+
+.joinUsBtns .part span {
+    color: #FE330A;
+    margin: 0 0.5vw;
+}
+
+.joinUsBtns .part i {
+    color: rgba(178, 175, 175, 0.884);
+    font-size: 1.8vw;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+/* =======================================  ContactUs Page =================================== */
+.ContactUsPage {
+    width: 100vw;
+    height: 87vh;
+    position: relative;
+}
+
+.ContactUsPage .premier-text {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    line-height: 1;
+    letter-spacing: 0.5vw;
+    font-size: 12vw;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-family: nb;
+}
+
+.ContactUsPage .content {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.ContactUsPage .userEmail {
+    width: 42%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.ContactUsPage .userEmail h3 {
+    font-size: 2vw;
+    margin-bottom: 4vh;
+}
+
+.ContactUsPage .userEmail form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.ContactUsPage .userEmail input {
+    font-size: 1.1vw;
+    height: 8vh;
+    width: 22vw;
+    padding-left: 1vw;
+}
+
+.ContactUsPage .userEmail input::-webkit-input-placeholder {
+    color: black;
+}
+
+.ContactUsPage .userEmail input::-moz-placeholder {
+    color: black;
+}
+
+.ContactUsPage .userEmail input:-ms-input-placeholder {
+    color: black;
+}
+
+.ContactUsPage .userEmail input::-ms-input-placeholder {
+    color: black;
+}
+
+.ContactUsPage .userEmail input::placeholder {
+    color: black;
+}
+
+.ContactUsPage .userEmail button {
+    font-size: 1.1vw;
+    height: 8vh;
+    width: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+    background-color: #FE330A;
+    border: none;
+}
+
+.ContactUsPage .userEmail button .text {
+    overflow: hidden;
+}
+
+.ContactUsPage .userEmail button i {
+    font-size: 1.3vw;
+}
+
+.ContactUsPage .ourEmail {
+    width: 25%;
+}
+
+.ContactUsPage .ourEmail h2 {
+    font-size: 4vw;
+}
+
+.ContactUsPage .ourEmail .email {
+    margin-top: 3vh;
+    margin-bottom: 1.8vh;
+    padding-left: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+}
+
+.ContactUsPage .ourEmail .phonenumber {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+    padding-left: 2vw;
+}
+
+.ContactUsPage .ourEmail i {
+    font-size: 2.2vw;
+}
+
+.ContactUsPage .ourEmail h5 {
+    font-size: 1.1vw;
+}
+
+.ContactUsPage .copyrightLayer {
+    position: absolute;
+    padding: 0 3vw;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 13vh;
+    background-color: #111;
+}
+
+.ContactUsPage .copyrightLayer .wrapper {
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.ContactUsPage .copyrightLayer .left {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vh;
+}
+
+.ContactUsPage .copyrightLayer .left div {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.ContactUsPage .copyrightLayer .right {
+    font-size: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+}
+
+.ContactUsPage .copyrightLayer .right i:hover {
+    color: #AADD3A;
+}
+
+/* ========================================= join Us page =====================================*/
+/*  active on click on joinus btn of pg1 */
+.joinUsPage {
+    position: fixed;
+    z-index: 143;
+    top: 100%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+}
+
+.joinUsPage nav {
+    padding: 20px 10px;
+}
+
+.joinUsPage nav .back {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: bolder;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.joinUsPage .btns {
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5vh;
+}
+
+.joinUsPage .btns .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30vw;
+    height: 8vh;
+    background-color: #FE330A;
+    border-radius: 10px;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.joinUsPage .btns #btn3 {
+    background-color: rgb(202, 200, 200);
+    color: black;
+}
+
+.joinUsPage .btns .button:hover {
+    background-color: #a92608da;
+}
+
+.joinUsPage .btns #btn3:hover {
+    background-color: rgb(136, 133, 133);
+}
+
+/* =================================================== Forms page===================================== */
+.formPage {
+    position: fixed;
+    z-index: 144;
+    top: 100%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(239, 235, 235);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    color: black;
+}
+
+.formPage nav {
+    padding: 20px 10px;
+}
+
+.formPage nav .back {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: bolder;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.formPage .modelForm {
+    height: calc(100% - 75px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7vh;
+}
+
+.formPage .modelForm h1 {
+    font-size: 3.2vw;
+}
+
+.formPage .modelForm h1 span {
+    color: #FE330A;
+}
+
+.formPage .modelForm form {
+    min-width: 30vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formPage .modelForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formPage .modelForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formPage .modelForm button {
+    background-color: #FE330A;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 1.4vmax;
+    margin-top: 2vh;
+}
+
+/* ------- form for signUp ----- */
+.formPage .signUpForm {
+    height: calc(100% - 75px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7vh;
+}
+
+.formPage .signUpForm h1 {
+    font-size: 3.2vw;
+}
+
+.formPage .signUpForm h1 span {
+    color: #FE330A;
+}
+
+.formPage .signUpForm form {
+    min-width: 30vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formPage .signUpForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formPage .signUpForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formPage .signUpForm button {
+    background-color: #FE330A;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 1.4vmax;
+    margin-top: 2vh;
+}
+
+
+
+
+/* ========================================== Midea Query ================================================= */
+@media (max-width: 600px) {
+    .curser-circle{
+        display: none;
+    }
+
+    .page1 {
+        padding: 0vh 0vw 3vh 0vw;
+    }
+
+    /* ------------------------------- pg1 left  */
+    .pg1-left {
+        padding-top: 2.5vh;
+        padding-left: 2vw;
+    }
+
+    .pg1-left .text {
+        padding-left: 2vw;
+        width: 115%;
+        font-size: 4vw;
+        line-height: 1.2;
+        letter-spacing: 2px;
+    }
+
+    .pg1-left .text .layer1 {
+        overflow: visible;
+    }
+
+    .pg1-left .text .layer2 {
+        margin-top: 0.5vh;
+        margin-left: 0vh;
+        overflow: visible;
+    }
+
+    .pg1-left .layer2 h1 {
+        gap: 0.25vw;
+    }
+
+    .pg1-left .logo {
+        width: 200%;
+        padding-left: 2vw;
+        overflow: visible;
+        font-size: 25vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    /* -------------------------- pg1 right */
+    .pg1-right {
+        padding: 0;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    .pg1-right .menubar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        font-size: 10vw;
+        padding-right: 2vw;
+        padding-top: 2vh;
+    }
+
+    .pg1-right-nav {
+        padding: 2vh 6vw 0vh 10vw;
+        margin-top: 0vh;
+        position: absolute;
+        left: 110%;
+        top: 0;
+        z-index: 1000;
+        width: 100vw !important;
+        height: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        gap: 2vh;
+        background-color: yellow;
+        color: black;
+    }
+
+    .pg1-right .backInMobile {
+        display: initial;
+        height: 10vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        font-size: 12vw;
+    }
+
+    .pg1-right .backInMobile i {
+        rotate: 45deg;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .pg1-right-nav .elem {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        font-size: 8vw;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        background-color: red;
+    }
+    .pg1-right .text {
+        left: -90%;
+        font-size: 2.3vw;
+        color: rgb(208, 209, 209);
+        top: 62vh;
+        line-height: 1.2;
+    }
+
+    .pg1-right .text #outer {
+        margin-top: 10px;
+        height: 6px;
+        width: 95%;
+        background-color: rgba(234, 231, 231, 0.278);
+    }
+
+    .pg1-scroll-btn {
+        left: 15vw;
+        font-size: 3.6vw;
+    }
+
+    /* --------------------------------------------pg1 video */
+    .pg1-video {
+        border-radius: 5px;
+        top: 40%;
+    }
+
+    .pg1-modeling-text {
+        top: 40%;
+        font-size: 15vw;
+    }
+
+    /* ================================================ page2 ================================================ */
+
+    /* -------------------------- slogan  */
+    .page2 {
+        height: 125vh;
+    }
+
+    .pg2-slogan {
+        top: 10vh;
+        height: 12vh;
+    }
+
+    .pg2-slogan .text {
+        gap: 1.1vh;
+    }
+
+    .pg2-slogan h1 {
+        font-size: 5vw;
+    }
+
+    /* ---------------------------------------------------About */
+    .aboutSection {
+        border-radius: 10px;
+        background-color: #111;
+    }
+
+    .aboutSection .about {
+        font-size: 5vw;
+        width: 95vw;
+        text-align: center;
+    }
+
+    .aboutSection .about div {
+        margin-top: 3vh;
+        height: 1.5px;
+    }
+
+    .aboutContent {
+        margin-top: 6vh;
+        height: 120vh;
+    }
+
+    .aboutContent .content {
+        -webkit-transform: translate(0%, 0%);
+            -ms-transform: translate(0%, 0%);
+                transform: translate(0%, 0%);
+        left: 5%;
+        gap: 7vh;
+    }
+
+    .aboutContent .content .text {
+        width: 80vw;
+    }
+
+    .aboutContent .content .text h4 {
+        font-size: 4.5vw;
+        line-height: 1.3;
+    }
+
+    .aboutContent .content .image {
+        height: 100vh;
+        width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .aboutContent .image-scrollanime-Wrapper {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .aboutContent .image-scrollanime-Wrapper .scroll-text-coming {
+        border-radius: 6px;
+    }
+
+    .aboutContent .image-scrollanime-Wrapper h1 {
+        font-size: 18vw;
+        rotate: 0deg;
+        height: 15vh;
+        letter-spacing: 0.7vw;
+    }
+
+    .aboutContent .image-scrollanime-Wrapper .aboutUsBtn {
+        margin-top: 2vh;
+        position: absolute;
+        right: 2%;
+        font-size: 3.2vw;
+    }
+
+    .aboutContent .content .image p {
+        width: 90%;
+        padding: 1.5vh 0vw;
+        font-size: 3vw;
+        color: #d6d2d2;
+    }
+
+    /* ----------------------------------great animation */
+    .aboutContent .greatAnimation {
+        top: -1.3%;
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .aboutContent .greatAnimation .part2 {
+        width: 23vw;
+        height: 23vw;
+        -webkit-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+    }
+
+    .aboutContent .greatAnimation .part3 {
+        width: 21vw;
+        height: 21vw;
+        -webkit-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+    }
+
+    /* ===================================================  page3 ===================================== */
+
+    /* ---------------------------- model page heading */
+    .page3 .modelHeading {
+        font-size: 5vw;
+        width: 100vw;
+        letter-spacing: 0.6vw;
+        text-align: center;
+        margin-left: 0vw;
+        padding: 0 4vw;
+    }
+
+    .page3 .modelHeading div {
+        margin-top: 2vh;
+        height: 1.5px;
+    }
+
+    /* ---------------------------swiperjs animation */
+    .swiper {
+        width: 100%;
+        height: 60vh;
+        margin-top: 7vh;
+        margin-bottom: 0vh;
+    }
+
+    .swiper .swiper-wrapper::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    .swiper .swiper-wrapper {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 7vw;
+        padding-left: 3vw;
+        border-radius: 6px;
+    }
+
+    .swiper-slide {
+        width: 80vw;
+        margin-bottom: 2vh;
+    }
+
+    .swiper-slide img {
+        height: 80%;
+        border-radius: 6px;
+    }
+
+    .swiper-slide .text {
+        height: 17%;
+        margin-left: 1.5vw;
+    }
+
+    .swiper-slide .text .name,
+    .swiper-slide .text .country {
+        font-size: 4.1vw;
+    }
+
+    .swiper-slide .line {
+        height: 0.65px;
+    }
+
+    /* ----------------------------view all naamke btns */
+    .page3 .viewAllWraper {
+        margin-top: 4vh;
+        height: 40vh;
+        width: 100vw;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .viewAll {
+        width: 90%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .viewAll .left {
+        width: 100%;
+        height: 40%;
+        border-right: 0px solid white;
+        border-bottom: 1px solid white;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 4vh;
+    }
+
+    .viewAll .left h2 {
+        height: 5vh;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 0 4vw;
+        border-radius: 7px;
+        font-size: 4vw;
+    }
+
+    .viewAll .right {
+        width: 100%;
+        padding: 4vh 0;
+    }
+
+    .viewAll .right p {
+        font-size: 3.1vw;
+    }
+
+    .page3 .joinUsBtns {
+        height: 7vh;
+        margin-top: 0vh;
+        width: 100%;
+        gap: 7vw;
+    }
+
+    .page3 .joinUsBtns h1 {
+        height: 8vh;
+        width: 45vw;
+        font-size: 3.8vw;
+    }
+
+    .page3 .joinUsBtns .line {
+        height: 1.3px;
+        width: 90%;
+    }
+
+    .joinUsBtns .part i {
+        font-size: 4.5vw;
+        margin-left: 5px;
+    }
+
+    /* ===============================================  ContactUs Page ======================================= */
+    .ContactUsPage {
+        height: 85vh;
+    }
+
+    .ContactUsPage .premier-text {
+        font-size: 13vw;
+    }
+
+    .ContactUsPage .premier-text h1 {
+        position: absolute;
+        bottom: 12vh;
+    }
+
+    .ContactUsPage .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+
+    .ContactUsPage .ourEmail {
+        width: 60%;
+        padding-left: 4vw;
+        margin-bottom: 5vh;
+    }
+
+    .ContactUsPage .ourEmail h2 {
+        font-size: 7vw;
+    }
+
+    .ContactUsPage .ourEmail .email {
+        margin-top: 2vh;
+        margin-bottom: 0.5vh;
+        padding-left: 0vw;
+        gap: 4vw;
+    }
+
+    .ContactUsPage .ourEmail .phonenumber {
+        gap: 4vw;
+        padding-left: 0vw;
+    }
+
+    .ContactUsPage .ourEmail i {
+        font-size: 7vw;
+    }
+
+    .ContactUsPage .ourEmail h5 {
+        font-size: 3vw;
+    }
+
+    .ContactUsPage .userEmail {
+        margin-top: 8vh;
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .ContactUsPage .userEmail h3 {
+        font-size: 5vw;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        margin-bottom: 2vh;
+    }
+
+    .ContactUsPage .userEmail input {
+        font-size: 2.5vw;
+        height: 5vh;
+        width: 50vw;
+    }
+
+    .ContactUsPage .userEmail button {
+        font-size: 3vw;
+        height: 5vh;
+        width: 22vw;
+    }
+
+    .ContactUsPage .userEmail button i {
+        font-size: 3.5vw;
+    }
+
+    .ContactUsPage .copyrightLayer {
+        height: 15vh;
+        padding: 0 2vw;
+    }
+
+    .ContactUsPage .copyrightLayer .left {
+        gap: 0.5vh;
+    }
+
+    .ContactUsPage .copyrightLayer .wrapper {
+        height: 60%;
+    }
+
+    .ContactUsPage .copyrightLayer .left {
+        font-size: 3.2vw;
+        color: rgb(96, 96, 182);
+    }
+
+    .ContactUsPage .copyrightLayer .left div {
+        height: 1px;
+        background-color: #535252;
+    }
+
+    .ContactUsPage .copyrightLayer .center {
+        font-size: 2.5vw;
+    }
+
+    .ContactUsPage .copyrightLayer .right {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        font-size: 6vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 3vw;
+    }
+
+    /* ========================================= join Us page =====================================*/
+    /*  active on click on joinus btn of pg1 */
+    .joinUsPage nav .back {
+        font-size: 7vw;
+    }
+
+    .joinUsPage .btns {
+        gap: 3vh;
+    }
+
+    .joinUsPage .btns .button {
+        width: 60vw;
+        height: 7vh;
+        border-radius: 7px;
+        font-size: 4.8vw;
+    }
+
+    /* =================================================== Forms page===================================== */
+    .formPage nav .back {
+        font-size: 6vw;
+    }
+
+    .formPage .modelForm {
+        margin-top: 7vh;
+        gap: 3vh;
+    }
+
+    .formPage .modelForm h1 {
+        font-size: 8vw;
+    }
+
+    .formPage .modelForm button {
+        font-size: 5vw;
+        margin-top: 0.5vh;
+    }
+
+    /* ------- form for signUp ----- */
+    .formPage .signUpForm {
+        margin-top: 12vh;
+        gap: 4vh;
+    }
+
+    .formPage .signUpForm h1 {
+        font-size: 8vw;
+    }
+
+    .formPage .signUpForm button {
+        font-size: 5vw;
+        margin-top: 0.5vh;
+    }
+}
